@@ -9,7 +9,76 @@
 </head>
 <body class="debug">
 
+    <div class="container-fluid">
+        <h2>Gestione colonne senza wrap</h2>
+
+        <!-- dobbiamo ricordarci che ogni volta dobbiamo aprire una row -->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-11">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-10">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-9">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-8">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-5">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-7">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
     <div class="container">
+
+        <!-- non serve aprire una row, perchè vanno a capo in automatico -->
 
         <!-- ******* con il wrap ***** -->
         <!-- prima row -->
@@ -63,6 +132,164 @@
         <!-- end prima row -->
         <!-- ******* end con il wrap ***** -->
 
+    </div>
+
+    <div class="container-fluid">
+        <!-- creiamo 4 colonne -->
+        <h2>4 colonne</h2>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <h2>2 colonne</h2>
+        
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Offset</h2>
+        <div class="row">
+            <div class="col-xs-offset-11 col-xs-1">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-10 col-xs-2">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-9 col-xs-3">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-8 col-xs-4">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-7 col-xs-5">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-6 col-xs-6">
+                <div class="box"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <!-- Prove Offset -->
+
+        <div class="row">
+            <div class="col-xs-offset-4 col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-5">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-offset-4 col-xs-3">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-2">
+                <div class="box"></div>
+            </div>
+            <div class="col-xs-3">
+                <div class="box"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Nested</h2>
+        <div class="row">
+            <!-- prima colonna -->
+            <div class="col-xs-6 grigio">
+                <!-- per innnestare ricordiamoci di utilizzare nuovamente la row -->
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="box-nested"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="box-nested"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end prima colonna -->
+
+            <!-- seconda colonna -->
+            <div class="col-xs-6">
+
+                <div class="row box">
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="box-nested"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end seconda colonna -->
+        </div>
     </div>
     
 </body>
